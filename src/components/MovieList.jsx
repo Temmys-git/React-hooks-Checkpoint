@@ -11,7 +11,7 @@ const MovieList = ()=> {
             setMovies(sortMovies)
     }
     const filterByRating = ()=>{
-            const sortMovies = movies.sort((a,b)=>a.rating-b.rating).map(movie=>movie)
+            const sortMovies = movies.sort((a,b)=>b.rating-a.rating).map(movie=>movie)
             // console.log(sortMovies)
             setMovies(sortMovies)
     }
